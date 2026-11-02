@@ -1,0 +1,18 @@
+# ダウンロードした実行環境やキャッシュはGitHubへ載せません。
+.pixi/
+.cache/
+__pycache__/
+*.pyc
+.DS_Store
+
+# 再実行時のログや生成物です。掲載用の見本はassets/とexamples/に保存します。
+/logs/
+/demo.mp4
+/preview_*.png
+/training_examples.png
+/training_metrics.json
+/run_results*.json
+
+# APIキーや端末固有の設定を誤って含めないための除外です。
+.env
+.env.*

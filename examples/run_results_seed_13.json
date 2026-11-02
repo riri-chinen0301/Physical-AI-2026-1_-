@@ -1,0 +1,220 @@
+{
+  "seed": 13,
+  "simulation_seconds": 90,
+  "fps": 15,
+  "camera_frames_received": 1352,
+  "commands_received": 1350,
+  "feedback_messages": 18,
+  "sorted": 9,
+  "correct": 9,
+  "completed": 9,
+  "objects": [
+    {
+      "id": 0,
+      "truth": "C",
+      "destination": "C",
+      "correct": true
+    },
+    {
+      "id": 1,
+      "truth": "A",
+      "destination": "A",
+      "correct": true
+    },
+    {
+      "id": 2,
+      "truth": "B",
+      "destination": "B",
+      "correct": true
+    },
+    {
+      "id": 3,
+      "truth": "A",
+      "destination": "A",
+      "correct": true
+    },
+    {
+      "id": 4,
+      "truth": "B",
+      "destination": "B",
+      "correct": true
+    },
+    {
+      "id": 5,
+      "truth": "C",
+      "destination": "C",
+      "correct": true
+    },
+    {
+      "id": 6,
+      "truth": "A",
+      "destination": "A",
+      "correct": true
+    },
+    {
+      "id": 7,
+      "truth": "C",
+      "destination": "C",
+      "correct": true
+    },
+    {
+      "id": 8,
+      "truth": "B",
+      "destination": "B",
+      "correct": true
+    }
+  ],
+  "decisions": [
+    {
+      "time": 6.0,
+      "x": 110.5,
+      "y": 105.5,
+      "box": [
+        91,
+        86,
+        39,
+        39
+      ],
+      "label": "C",
+      "confidence": 0.9998419719858244
+    },
+    {
+      "time": 14.066666666666666,
+      "x": 210.5,
+      "y": 105.5,
+      "box": [
+        191,
+        86,
+        39,
+        39
+      ],
+      "label": "A",
+      "confidence": 0.9982720764356738
+    },
+    {
+      "time": 22.133333333333333,
+      "x": 310.5,
+      "y": 105.5,
+      "box": [
+        291,
+        86,
+        39,
+        39
+      ],
+      "label": "B",
+      "confidence": 0.9992266571630224
+    },
+    {
+      "time": 30.2,
+      "x": 110.5,
+      "y": 197.5,
+      "box": [
+        91,
+        178,
+        39,
+        39
+      ],
+      "label": "A",
+      "confidence": 0.9985961261477754
+    },
+    {
+      "time": 38.266666666666666,
+      "x": 210.5,
+      "y": 197.5,
+      "box": [
+        191,
+        178,
+        39,
+        39
+      ],
+      "label": "B",
+      "confidence": 0.9987157042226444
+    },
+    {
+      "time": 46.333333333333336,
+      "x": 310.5,
+      "y": 197.5,
+      "box": [
+        291,
+        178,
+        39,
+        39
+      ],
+      "label": "C",
+      "confidence": 0.9998723050831271
+    },
+    {
+      "time": 54.4,
+      "x": 110.5,
+      "y": 289.5,
+      "box": [
+        91,
+        270,
+        39,
+        39
+      ],
+      "label": "A",
+      "confidence": 0.9984816187591516
+    },
+    {
+      "time": 62.46666666666667,
+      "x": 210.5,
+      "y": 289.5,
+      "box": [
+        191,
+        270,
+        39,
+        39
+      ],
+      "label": "C",
+      "confidence": 0.9998301612749451
+    },
+    {
+      "time": 70.53333333333333,
+      "x": 310.5,
+      "y": 289.5,
+      "box": [
+        291,
+        270,
+        39,
+        39
+      ],
+      "label": "B",
+      "confidence": 0.9994081129554054
+    }
+  ],
+  "training": {
+    "train_samples": 1200,
+    "test_samples": 300,
+    "accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        90,
+        0,
+        0
+      ],
+      [
+        0,
+        103,
+        0
+      ],
+      [
+        0,
+        0,
+        107
+      ]
+    ],
+    "loss": [
+      0.9396773914910819,
+      0.023444044786931417,
+      0.010839179530713002,
+      0.006945191269605079,
+      0.005073825922678201,
+      0.003980179447646255,
+      0.0032652946363555297
+    ],
+    "seed": 42,
+    "model": "6 image color statistics -> 20 tanh -> 3 softmax",
+    "limitation": "Synthetic colors only; no validation on real medicines or real camera images."
+  }
+}

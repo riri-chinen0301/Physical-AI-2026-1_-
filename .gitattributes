@@ -1,0 +1,8 @@
+# ソースコードと起動スクリプトの改行をそろえます。
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.command text eol=lf
+*.png binary
+*.mp4 binary
+*.npz binary

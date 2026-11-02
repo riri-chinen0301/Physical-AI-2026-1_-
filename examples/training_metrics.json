@@ -1,0 +1,34 @@
+{
+  "train_samples": 1200,
+  "test_samples": 300,
+  "accuracy": 1.0,
+  "confusion_matrix": [
+    [
+      90,
+      0,
+      0
+    ],
+    [
+      0,
+      103,
+      0
+    ],
+    [
+      0,
+      0,
+      107
+    ]
+  ],
+  "loss": [
+    0.9396773914910819,
+    0.023444044786931417,
+    0.010839179530713002,
+    0.006945191269605079,
+    0.005073825922678201,
+    0.003980179447646255,
+    0.0032652946363555297
+  ],
+  "seed": 42,
+  "model": "6 image color statistics -> 20 tanh -> 3 softmax",
+  "limitation": "Synthetic colors only; no validation on real medicines or real camera images."
+}

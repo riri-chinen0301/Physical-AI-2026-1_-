@@ -1,0 +1,25 @@
+# Pixiはこの設定を読んで、ROS 2と必要なライブラリをまとめて準備します。
+[workspace]
+name = "physical-ai-ros2"
+channels = ["https://prefix.dev/robostack-jazzy", "https://prefix.dev/conda-forge"]
+platforms = ["osx-64"]
+
+# 対象環境：Intel Mac / macOS 14以降
+[system-requirements]
+macos = "14.0"
+
+[dependencies]
+ros-jazzy-desktop = "*"
+colcon-common-extensions = "*"
+
+[activation.env]
+ROS_LOCALHOST_ONLY = "1"
+ROS_DOMAIN_ID = "42"
+
+# よく使うコマンドに短い名前を付けています。例：pixi run demo
+[tasks]
+demo = "python main.py --preview --realtime"
+export = "python main.py"
+train = "python vision.py"
+test = "python -m unittest discover -s . -p test_core.py -v"
+check-layout = "python main.py --seed 13 --no-video"
